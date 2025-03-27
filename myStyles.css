@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #e5e5e5;
+}
+
+/* Encabezado */ 
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+/*
+header, nav, section {
+    border: #34c76a 10px;
+    
+}*/
+
+/* Navegación  */
+nav {
+    background: #ada9a9;
+    padding: 10px;
+}
+nav ul {    
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+section.nosotros {
+    flex: 1;
+    background: rgb(137, 108, 227);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra lateral */
+aside {
+    flex: 1;
+    background: #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
