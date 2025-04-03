@@ -82,3 +82,15 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+.container {
+    width: 400px;    
+    border: 2px solid rgb(225, 54, 54); /* Solo para visualizar el div */
+}
+
+.logo {
+    max-width: 100vw;  /* No será más grande que su contenedor, con % (relativa al contenedor) o con vw (relativo al tamaño del dispositivo)*/
+    height: auto;      /* Mantiene la proporción */
+    display: block;    /* Centrar con margin auto */
+    margin: 0 auto;    
+}

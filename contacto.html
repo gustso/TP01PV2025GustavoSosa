@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/myStyles.css"> 
     <title>Document</title>
+
 </head>
-<body>
+<body>   
     
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <div class="container"><img src="assets/images/bd.jpg" alt="Logo de la empresa" class="logo"></div>
+
+   <nav id="navbar"></nav>
+
+    <main>
+        <form id="contact-form">
+            <label id="labelApellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!--<label>Sexto:</label>
+            <input type="radio" id="sexoM" name="sexo">
+            <input type="radio" id="sexoF" name="sexo">-->
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>            
+
+            <label for="pais">País: </label>
+            <select id="pais" name="pais" multiple>
+                <option value="arG">Argentina</option>
+                <option value="mxO">México</option>
+                <option value="esÑ">España</option>
+            </select>
+           
+            <button type="submit" onclick="enviarFormulario()">Enviar</button>       
+
+        </form>
+    </main>
+
+    <footer id="contacto">
+        <p>&copy; 2025 Empresa Ficticia S.A. - Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+
+            const navHTML = 
+            `<nav>
+                <ul>
+                    <li><a href="index.html">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>`;
+
+            // Insertar el nav directamente en el div con id "navbar"
+            document.getElementById('navbar').innerHTML = navHTML;
+
+        // Función que se ejecuta cuando se hace clic en el botón
+        function enviarFormulario() {
+            // Evitar que el formulario se envíe y la página se recargue
+            event.preventDefault();
+
+            // Obtener los valores de los inputs
+            var apellido = document.getElementById("apellido").value;
+            var nombre = document.getElementById("nombre").value;
+
+            // Mostrar los valores en la consola
+            console.log("Nombre:", nombre);
+            console.log("Apellido:", apellido);
+
+            alert("nombre: "+nombre+" y apellido: "+apellido);
+
+            // componente HTML
+            
+        }
+    </script>
+    <script></script>
 </body>
 </html>
